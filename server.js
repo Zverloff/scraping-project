@@ -20,7 +20,7 @@ app.use(express.static("public"));
 mongoose.connect("mongodb://localhost/unit18Populater", { useNewUrlParser: true });
 
 // Routes
-
+//scrape route
 app.get("/scrape", function(req, res) {
   axios.get("https://www.cbr.com").then(function(response) {
     var $ = cheerio.load(response.data);
