@@ -17,7 +17,8 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/unit18Populater", { useNewUrlParser: true });
+mongoose.connect("mongodb://todd:password1@ds261332.mlab.com:61332/articles",
+ { useNewUrlParser: true });
 
 // Routes
 //scrape route
